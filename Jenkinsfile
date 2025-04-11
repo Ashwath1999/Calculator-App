@@ -1,11 +1,6 @@
 pipeline {
     agent none
 
-    environment {
-        STAGING_PATH = "C:\\Jenkins Deployments\\staging"
-        PROD_PATH    = "C:\\Jenkins Deployments\\production"
-    }
-
     stages {
         stage('Checkout Code') {
             agent { label 'checkout' }
